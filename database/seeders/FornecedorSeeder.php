@@ -17,26 +17,26 @@ class FornecedorSeeder extends Seeder
     {
         //instanciando o objeto
         $fornecedor = new Fornecedor();
-        $fornecedor->nome = "Junny D'Petra";
-        $fornecedor->site = 'dpetratechy.com.br';
+        $fornecedor->nome = "Salvador Dalí";
+        $fornecedor->site = 'dalitechy.com';
         $fornecedor->uf = 'SP';
-        $fornecedor->email = 'junny@dpetratechy.com.br';
+        $fornecedor->email = 'dali@dalitechy.com.br';
         $fornecedor->save();
 
         //utilizando o método create
-        Fornecedor::create([
-            'nome' => 'Júlio Apucarana',
-            'site' => 'apucaranatechy.com.br',
-            'uf' => 'PR',
-            'email' => 'julio@apucaranatechy.com.br',
-        ]);
+        // Fornecedor::create([
+        //     'nome' => 'Júlio Apucarana',
+        //     'site' => 'apucaranatechy.com.br',
+        //     'uf' => 'PR',
+        //     'email' => 'julio@apucaranatechy.com.br',
+        // ]);
 
         //insert
-        DB::table('fornecedores')->insert([
-            'nome' => 'Jnnyldo Costa',
-            'site' => 'jmctechy.com.br',
-            'uf' => 'SC',
-            'email' => 'junnyldocosta@jmctechy.com.br',
-        ]);
+        // DB::table('fornecedores')->insert([
+        //     'nome' => 'Junnyldo Costa',
+        //     'site' => 'jmctechy.com.br',
+        //     'uf' => 'SC',
+        //     'email' => 'junnyldocosta@jmctechy.com.br',
+        // ]);
     }
 }

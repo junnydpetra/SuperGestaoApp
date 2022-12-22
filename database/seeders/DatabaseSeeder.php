@@ -3,7 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Database\Seeders\FornecedorSeeder;
+use Database\Seeders\{FornecedorSeeder,
+                      SiteContatoSeeder
+                     };
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,6 +16,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(FornecedorSeeder::class);
+        $this->call([FornecedorSeeder::class, SiteContatoSeeder::class]);
     }
 }
